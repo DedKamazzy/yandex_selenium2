@@ -26,7 +26,7 @@ public class Configuration {
         wait = new WebDriverWait(driver, 10); // явное ожидание 10 сек
     }
 
-    @After
+   @After
 
      public void close() {
       driver.quit();

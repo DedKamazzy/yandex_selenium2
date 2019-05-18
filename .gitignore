@@ -1,0 +1,6 @@
+
+.gitignore
+.idea/vcs.xml
+.idea/workspace.xml
+allure-results/
+/src/main/target/
