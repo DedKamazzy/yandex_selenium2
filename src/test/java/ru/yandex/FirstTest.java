@@ -44,7 +44,7 @@ public class FirstTest extends Configuration{
             if (allLinks.size()== 48) {
                 System.out.println("Количество элементов на странице верное = 48"); // проверка количества элементов на странице
             } else {
-                System.out.println("Ошибка");
+                System.out.println("Количество элементов на странице= " +allLinks);
             }
 
         WebElement firstNotebock = driver.findElement(By.xpath("//div/a[text()='Ноутбук Lenovo V130 15']")); // выбор первого элемента
@@ -65,10 +65,10 @@ public class FirstTest extends Configuration{
         // System.out.println("Проверка успешна");
 
         if (title2.equals("Ноутбук Lenovo V130 15")) { // проверка соответствия
-            System.out.println("Проверка успешна2"); // проверка
+            System.out.println("Проверка успешна, элемент соответствует " +title2); // проверка
         }
         else {
-            System.out.println("Ошибка");
+            System.out.println("Ошибка, эелемент не =" +title2);
         }
     }
 
@@ -103,7 +103,7 @@ public class FirstTest extends Configuration{
         WebElement checkbox3 = driver.findElement(By.xpath("//div[@class=\"LhMupC0dLR\"]/span[text()='Acer']")); // выбор чекбокса Acer
         checkbox3.click();
 
-        WebElement checkbox4 = driver.findElement(By.xpath("//div[@class=\"LhMupC0dLR\"]/span[text()='ASUS']")); // выбор чекбокса DELL
+        WebElement checkbox4 = driver.findElement(By.xpath("//div[@class=\"LhMupC0dLR\"]/span[text()='DELL']")); // выбор чекбокса DELL
         checkbox4.click();
 
 
@@ -124,7 +124,7 @@ public class FirstTest extends Configuration{
         if (count== 48) {
            System.out.println("Количество элементов на странице верное = 48"); // проверка количества элементов на странице
         } else {
-            System.out.println("Ошибка");
+            System.out.println("количество элементов на странице= "+count);
         }
 
         WebElement firstPlan2= driver.findElement(By.xpath("//div[@class=\"n-snippet-list n-snippet-list_type_vertical metrika b-zone b-spy-init b-spy-events i-bem metrika_js_inited snippet-list_js_inited b-spy-init_js_inited b-zone_js_inited\"]")); // выбор первого элемента
